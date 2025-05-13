@@ -1,4 +1,20 @@
----
+---# Création du projet Next.js
+npx create-next-app@latest ecole-manager
+cd ecole-manager
+
+# Installation des dépendances principales
+npm install axios react-hook-form tailwindcss @headlessui/react @heroicons/react jsonwebtoken bcryptjs
+
+# Configuration de Tailwind CSS
+npx tailwindcss init -p
+
+# Créer les dossiers principaux
+mkdir -p components/layout components/auth components/dashboard components/eleves components/classes components/evaluations components/presences components/communication
+mkdir -p pages/api/auth pages/api/eleves pages/api/classes pages/api/evaluations pages/api/presences
+mkdir -p public/images
+mkdir -p styles
+mkdir -p utils lib
+mkdir -p models
 title: Next steps
 description: Develop, review, and submit your project.
 hideTOC: true
